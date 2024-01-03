@@ -36,7 +36,7 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/admin/add', function () {
         return view('admin.add');
     })->name('admin.add');
-    Route::post('admin.add', [AdminController::class, 'add'])->name('admin.add');
+    Route::post('admin/add', [AdminController::class, 'add'])->name('admin.add');
 });
 
 

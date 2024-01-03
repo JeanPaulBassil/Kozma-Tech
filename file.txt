@@ -1,0 +1,78 @@
+dependencies for : 
+.case: having as attributes
+- name
+- type 
+- color 
+- side panel 
+- price 
+
+.psu: having as attributes
+- name
+- type 
+- efficient rating
+- wattage 
+- modular 
+- price
+- color 
+
+
+.gpu: having as attributes
+- name
+- chipset 
+- memory 
+- core clock
+- clocl boost 
+- color 
+- price
+
+.storage: having as attributes
+- name
+- type
+- capacity
+- price
+- interface
+- form factor 
+
+.cooler: having as attributes
+- name
+- fan rpm
+- color 
+- price
+
+.ram ddr5: having as attributes
+- name
+- speed
+- modules 
+- color
+- price 
+
+.ram ddr4: having as attributes
+- name
+- speed
+- modules
+- color
+- price
+
+.12 13 14 gen ddr5: having as attributes
+- name 
+- socket/cpu 
+- memory max 
+- memory slots 
+- color 
+- price
+
+.12 13 14 gen ddr4: having as attributes
+- name 
+- socket/cpu 
+- memory max 
+- memory slots 
+- color 
+- price
+
+.10 11 gen: having as attributes
+- name 
+- socket/cpu 
+- memory max 
+- memory slots 
+- color 
+- price

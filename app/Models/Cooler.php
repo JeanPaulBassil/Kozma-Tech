@@ -16,5 +16,4 @@ class Cooler extends Model
         'specifications', 
         'price'
     ];
-
 }
