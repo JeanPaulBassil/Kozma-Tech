@@ -29,6 +29,13 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::get('/pc-builds', [PcBuildController::class, 'index'])->name('pcbuilds.index');
+    Route::get('/pc-builds/create', [PcBuildController::class, 'create'])->name('pcbuilds.create');
+    Route::post('/pc-builds', [PcBuildController::class, 'store'])->name('pcbuilds.store');
+    Route::get('/select-component/{type}', [PcBuildController::class, 'selectComponent'])->name('select.component');
+    Route::get('/build/select-component/{type}', [PcBuildController::class, 'selectComponent'])->name('build.selectComponent');
+    Route::post('/pc-builds', [PcBuildController::class, 'store'])->name('pcbuilds.store');
+    Route::get('/build/add-component/{type}/{componentId}', [PcBuildController::class, 'addComponentToSession'])->name('build.addComponentToSession');
+
 });
 
 Route::middleware(['auth', 'admin'])->group(function () {
